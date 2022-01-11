@@ -1,0 +1,19 @@
+{
+    "naziv": "Rap God",
+    "izvodjac": "Eminem",
+    "genre": "Rap",
+    "datum": "2013",
+    "yt": "src= 'https://www.youtube.com/embed/XbGs_qK2PQA'",
+    "ocena": [5, 5, 4, 5],
+    "komentari": [{
+        "id": 0,
+        "autor": "neko",
+        "tekst": "String string",
+        "odgovori": [
+            {
+                "id": 0,
+                "autor": "Neko",
+                "tekst": "nesto"
+            }]
+        }]
+  }

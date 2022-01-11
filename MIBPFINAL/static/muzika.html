@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Left Me Yet</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1" />
+    <script type="text/javascript" src="javascript/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/ajax.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container bg-dark text-white">
+      <h1><span id="nazivPesme"></span></h1>
+      <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-3">
+          <span id="link"></span>
+        </div>
+        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-3">
+          <p>
+            Izvodjac:<span id="izvodjac"></span><br />
+            Objavljeno:<span id="datum"></span><br />
+            Zanr:<span id="genre"></span><br />
+          </p>
+          <h2>Ocene</h2>
+          <span id="slike"></span>
+          <form>
+            <input type="radio" name="ocena" value="1" />
+            <input type="radio" name="ocena" value="2" />
+            <input type="radio" name="ocena" value="3" />
+            <input type="radio" name="ocena" value="4" />
+            <input type="radio" name="ocena" value="5" />
+            <br /><span id="prosecna"></span>
+          </form>
+          <button onclick="addOcena()">Submit</button>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+        <hr />
+        <form id="frm1" action="/action_page.php">
+          Name: <input type="text" name="ime"><br>
+          Text: <input type="text" name="text"><br><br>
+        </form> 
+        <button onclick="addKomentar()">Submit</button>
+        <p id="komentari"></p>
+        <a href="sajt.html">Nazad</a>
+      </div>
+  </body>
+</html>

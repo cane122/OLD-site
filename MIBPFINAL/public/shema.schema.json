@@ -1,0 +1,57 @@
+{
+  "bsonType": "object",
+  "required": ["naziv", "genre", "yt"],
+  "properties": {
+    "naziv": {
+      "bsonType": "string"
+    },
+    "genre": {
+      "enum": ["Pop", "Rok", "Metal", "Rap"]
+    },
+    "yt": {
+      "bsonType": "string"
+    },
+    "ocena": {
+      "bsonType": "double"
+    },
+    "brojOcena": {
+      "bsonType": "int"
+    },
+    "izvodjac": {
+      "bsonType": "string"
+    },
+    "datum": {
+      "bsonType": "string"
+    },
+    "komentari": {
+      "bsonType": "object",
+      "required": ["id", "autor", "tekst"],
+      "properties": {
+        "id": {
+          "bsonType": "int"
+        },
+        "autor": {
+          "bsonType": "string"
+        },
+        "tekst": {
+          "bsonType": "string"
+        },
+        "odgovori": {
+          "bsonType": "object",
+          "required": ["id", "autor", "tekst"],
+          "properties": {
+            "id": {
+              "bsonType": "int"
+            },
+            "autor": {
+              "bsonType": "string"
+            },
+            "tekst": {
+              "bsonType": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+
+  {
+    "title": "3 AM",
+    "izvodjac": "NF",
+    "genre": "Rap",
+    "year": 2017,
+    "ytlink": "src= 'https://www.youtube.com/watch?v=Z2VLOkCSoX8'",
+    "ocene": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "ocena": 5,
+    "komentari": [
+      {
+        "id": 0,
+        "autor": "neko",
+        "tekst": "String string",
+        "odgovori": [
+          {
+            "id": 0,
+            "autor": "Neko",
+            "tekst": "nesto"
+          }
+        ]
+      }
+    ]
+  }
+  

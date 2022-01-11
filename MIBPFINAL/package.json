@@ -1,0 +1,13 @@
+{
+  "name": "DevetaAplikacija",
+  "version": "0.1.1",
+  "description": "Demonstrira implementaciju REST CRUD servisa",
+  "author": "Dragan Ivanovic <dragan.ivanovic@uns.ac.rs>",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^5.9.16"
+  },
+  "devDependencies": {},
+  "license": "Creative Commons"
+}

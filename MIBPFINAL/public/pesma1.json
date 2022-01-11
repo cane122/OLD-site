@@ -1,0 +1,58 @@
+[
+  {
+    "naziv": "U tom Somboru",
+    "izvodjac": "Zvonko Bogdan",
+    "genre": "Pop",
+    "datum": "2004",
+    "yt": "src= 'https://www.youtube.com/embed/XbGs_qK2PQA'",
+	"ocena": 4.75,
+	"brojOcena": 4, 
+    "komentari": 
+      {
+        "id": 0,
+        "autor": "neko",
+        "tekst": "String string",
+        "odgovori": 
+          {
+            "id": 0,
+            "autor": "Neko",
+            "tekst": "nesto"
+          }
+        
+      }
+  },
+  {
+    "naziv": "3 AM",
+    "izvodjac": "NF",
+    "genre": "Rap",
+    "datum": "2017",
+    "yt": "src= 'https://www.youtube.com/watch?v=Z2VLOkCSoX8'",
+    "ocena": 4.75,
+	"brojOcena": 10, 
+    "komentari": 
+      {
+        "id": 0,
+        "autor": "neko",
+        "tekst": "String string",
+        "odgovori": 
+          {
+            "id": 0,
+            "autor": "Neko",
+            "tekst": "nesto"
+          }
+        
+      }
+    
+  },
+  {
+    "naziv": "Rap God",
+    "izvodjac": "Eminem",
+    "genre": "Rap",
+    "datum": "2013",
+    "yt": "src= 'https://www.youtube.com/embed/XbGs_qK2PQA'",
+    "ocena": 4.5,
+	  "brojOcena": 20
+    
+  }
+
+]

@@ -1,0 +1,74 @@
+1. upisemo u konzolu:
+mongoimport --jsonArray --db pesme --collection stagod --file path\pesma1.json
+2. mongo
+3. use pesme
+3.1. show collections //obicna provera
+3.2 db.stagod.find().pretty() //provera za file
+3.3 db.stagod.count() // prebrojava
+4. db.runCommand( {
+    collMod: "stagod",
+    validator: { $jsonSchema: {
+        bsonType: "object",
+        required: ["naziv", "genre", "yt"],
+        properties: {
+          naziv: {
+            bsonType: "string",
+	     description: "must be a string and is required"
+          },
+          genre: {
+            enum: ["Pop", "Rok", "Metal", "Rap"],
+description: "must be a genre"
+          },
+          yt: {
+            bsonType: "string",
+description: "must be a string"
+          },
+          ocena: {
+            bsonType: "double"
+          },
+          brojOcena: {
+            bsonType: "int"
+          },
+          izvodjac: {
+            bsonType: "string"
+          },
+          datum: {
+            bsonType: "string"
+          },
+          komentari: {
+            bsonType: "object",
+            properties: {
+              id: {
+                bsonType: "int"
+              },
+              autor: {
+                bsonType: "string"
+              },
+              tekst: {
+                bsonType: "string"
+              },
+              odgovori: {
+                bsonType: "object",
+                properties: {
+                  id: {
+                    "bsonType": "int"
+                  },
+                  autor: {
+                    bsonType: "string"
+                  },
+                  tekst: {
+                    bsonType: "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      } },
+ } )
+5. db.stagod.insert({"sta":"neradi"})
+6. db.stagod.insert({
+    "naziv": "U tom Somboru",
+    "genre": "Pop",
+    "yt": "string"
+  })
